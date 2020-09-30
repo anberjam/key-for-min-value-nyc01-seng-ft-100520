@@ -7,6 +7,7 @@ def key_for_min_value(name_hash)
   end
   min=0
   current=0
+  key=""
   name_hash.each do |key, value|
     current=value
     
