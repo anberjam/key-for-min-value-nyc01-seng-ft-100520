@@ -6,11 +6,15 @@ def key_for_min_value(name_hash)
     return nil 
   end
   values=[]
-  keys=[]
+    name_hash.each do |key, value|
+      values << [key,value]
+    end
+  min=values[0][1]
   name_hash.each do |key, value|
-    values << value
-    keys << key
+    if value < min
+      min=value
   end
-  
+  x=values.index(min)
+  return name_hash[x]
     
 end
