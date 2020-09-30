@@ -5,12 +5,12 @@ def key_for_min_value(name_hash)
   if name_hash.length == 0 
     return nil 
   end
-  array=[name_hash]
-  min=array0
-  current=0
-  min_key=""
+  values=[]
+  keys=[]
   name_hash.each do |key, value|
-    
-    
+    values << value
+    keys << key
+  end
+  
     
 end
